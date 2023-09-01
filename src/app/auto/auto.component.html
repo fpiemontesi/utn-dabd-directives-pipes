@@ -1,0 +1,19 @@
+<!-- <p *ngIf="mostrar">auto works!</p>
+<span [class.mostrar]="mostrar" [class.ocultar]="!mostrar">
+  SPAN
+</span>
+
+<button (click)="mostrame()">Mostrar/Ocultar</button>
+
+<br/> -->
+
+<p>
+  {{ auto?.nombre }}
+</p>
+<p>
+  Fecha Fabricacion: {{ auto?.fecha | date:'dd/MM/yyyy' }}
+</p>
+<p>
+  Activo: {{ auto?.activo | estado }}
+</p>
+

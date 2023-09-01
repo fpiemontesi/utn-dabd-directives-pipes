@@ -1,0 +1,15 @@
+<a-titulo>
+  <abbr> Autos</abbr>
+</a-titulo>
+
+<ng-container *ngFor="let a of autos">
+  <ng-container *ngIf="a.visible">
+    <a-auto [auto]="a"></a-auto>
+  </ng-container>
+</ng-container>
+
+<label>Nuevo Auto: </label>
+<input [value]="nuevoAuto"
+  (input)="modificarNuevoAuto($event)" />
+
+<button (click)="agregar()">+</button>
